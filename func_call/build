@@ -1,0 +1,3 @@
+as -g -o print_reg.o print_reg.s
+as -g -o add2nos.o add2nos.s
+ld -e _start -o print_reg add2nos.o print_reg.o -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path`
